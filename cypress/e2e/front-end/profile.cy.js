@@ -16,6 +16,6 @@ describe('Users feature', () => {
         cy.get('#age').type('24');
         cy.get('.btn-default').click();
         cy.get(':nth-child(1) > .result').should('contain.text', 'The profile has been saved successful');
-        
+        cy.screenshot();  
     })
 })
